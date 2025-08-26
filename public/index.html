@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Talkito Clásico con Imágenes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="chat-container">
+    <h2>💬 Talkito Clásico</h2>
+    <div id="messages"></div>
+    <form id="chat-form">
+      <input id="msg-input" autocomplete="off" placeholder="Escribe tu mensaje..." />
+      <button type="submit">Enviar</button>
+      <input type="file" id="img-input" accept="image/*" style="display:none">
+      <button type="button" id="img-btn">📷</button>
+    </form>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="client.js"></script>
+</body>
+</html>
